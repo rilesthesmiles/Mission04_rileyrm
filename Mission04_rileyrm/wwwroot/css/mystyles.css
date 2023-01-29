@@ -1,0 +1,32 @@
+﻿body {
+}
+
+.JoshuaTree {
+    width: 400px;
+    height: auto;
+}
+
+label{
+    width: 150px;
+    display: inline-block;
+}
+
+h3{
+    color: saddlebrown;
+}
+
+.letterOutput{
+    font-size: 100px;
+    text-align: center;
+}
+
+.percetageOutput {
+    font-size: 50px;
+    text-align: center;
+}
+
+.finalText {
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
