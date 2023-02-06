@@ -4,6 +4,8 @@
 @{
 }
 
+@model GradeCalculatorModel;
+
 <h3>Enter Your Final Percentages Below (Whole Numbers)</h3>
 
 <!--
@@ -11,26 +13,28 @@ This is the form where the user puts in their final grade percentage. These numb
 -->
 <form method="post">
     <label>Assignments</label>
-    <input id="assignmentsInput" name="Assignments" type="number" />
+    <input id="assignmentsInput" asp-for="Assignments"/>
     <br />
     <label>Group Projects</label>
-    <input id="groupInput" name="GroupProjects" type="number" />
+    <input id="groupInput" asp-for="GroupProjects"  />
     <br />
     <label>Quizzes</label>
-    <input id="quizzesInput" name="Quizzes" type="number" />
+    <input id="quizzesInput" asp-for="Quizzes" />
     <br />
     <label>Midterm Exam</label>
-    <input id="midtermInput" name="Midterm" type="number" />
+    <input id="midtermInput" asp-for="Midterm" />
     <br />
     <label>Final Exam</label>
-    <input id="finalInput" name="Final" type="number" />
+    <input id="finalInput" asp-for="Final"  />
     <br />
     <label>Intex</label>
-    <input id="intexInput" name="Intex" type="number" />
+    <input id="intexInput" asp-for="Intex"  />
     <br />
     <br />
     <input id="btsnd" type="submit" value="Calculate Final Grade" onclick="CalculateFinalGrade()" />
 </form>
+
+<div asp-validation-summary="All"></div>
 
 <!--
 This is where the final grade letter and percentage is outputted
@@ -41,4 +45,3 @@ This is where the final grade letter and percentage is outputted
 <div id="percentageOutput" class="percetageOutput"></div>
 
 
-<script src="js/myJava.js"></script>

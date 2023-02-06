@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Mission04_rileyrm.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,7 @@ namespace Mission04_rileyrm.Controllers
         }
 
         [HttpPost]
-        public IActionResult GradeCalculator(object model)
+        public IActionResult GradeCalculator(GradeCalculatorModel model)
         {
             return View();
         }

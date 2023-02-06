@@ -1,5 +1,6 @@
 ﻿function CalculateFinalGrade() {
 
+
     // All the variables are taken from the HTML and converted into floats
     // They are then converted into percentages
     var assignmentInput = parseFloat($("#assignmentsInput").val()) * 0.5;
@@ -78,7 +79,8 @@
     }
 
     //the percentage is inputted back onto the html file
-    resultString = results + "%";
+    resultString = results + "% baby";
     $("#percentageOutput").html(resultString);
+
 
 }
