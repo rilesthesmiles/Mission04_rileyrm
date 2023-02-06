@@ -79,8 +79,10 @@
     }
 
     //the percentage is inputted back onto the html file
-    resultString = results + "% baby";
+    resultString = results + "%";
     $("#percentageOutput").html(resultString);
+
+    alert("Letter Grade: " + letterGrade + "\nPercentage: " + resultString)
 
 
 }
